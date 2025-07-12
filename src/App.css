@@ -1,0 +1,28 @@
+
+
+/* Base styles: mobile-first */
+
+@media screen and (min-width: 640px) {
+  /* sm — small tablets & large phones */
+  .navbar { padding: 0.75rem 1rem; }
+  .home-section { padding: 4rem 2rem; }
+}
+
+
+@media screen and (min-width: 768px) {
+  /* md — tablets & small desktops */
+  .navbar ul { flex-direction: row; }
+  .about-card { flex-direction: row; padding: 3rem; }
+  .about-img { width: 300px; height: 300px; }
+  .about-text h3 { font-size: 1.875rem; /* 30px */ }
+  .about-text p { font-size: 1.125rem; /* 18px */ }
+}
+
+@media screen and (min-width: 1024px) {
+  /* lg — desktops & up */
+  .navbar { padding: 1rem 2rem; }
+  .about-card { max-width: 1200px; }
+  .about-img { width: 350px; height: 350px; }
+  .about-text h3 { font-size: 2.25rem; /* 36px */ }
+  .about-text p { font-size: 1.25rem; /* 20px */ }
+}
