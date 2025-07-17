@@ -17,7 +17,6 @@ export default function About() {
     fontSize: '3rem',
     textAlign: 'center',
     fontStyle: 'italic',
-    marginTop: '-20px',
     transition: 'color 0.3s ease',
     cursor: 'pointer',
   };
@@ -58,7 +57,8 @@ export default function About() {
           style={h2style}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
-          className="inline-block drop-shadow-[10px_0_15px_rgba(255,0,0,0.9)] transition duration-300 mx-auto"
+          className="inline-block drop-shadow-[10px_0_15px_rgba(255,0,0,0.9)] transition duration-300 mx-auto
+                     mt-0 md:mt-[-20px] text-3xl sm:text-4xl md:text-5xl"
         >
           About Me
         </h2>
@@ -66,10 +66,9 @@ export default function About() {
 
       <div
         className="w-full max-w-[1200px] mx-auto rounded-lg shadow-lg p-10
-                    flex flex-col md:flex-row items-center justify-center gap-12 h-[500px]"
+                    flex flex-col md:flex-row flex-wrap items-center justify-center gap-12 min-h-[500px]"
         style={{
           backgroundImage: `url(${contentBg})`,
-          // backgroundColor: '#0f1421',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -81,13 +80,11 @@ export default function About() {
           className="w-[300px] h-[300px] rounded-full object-cover"
         />
 
-        <div className="flex-1 text-white space-y-6">
+        <div className="flex-1 text-white space-y-6 min-h-0">
           {aboutItems.map((item, index) => (
             <div
               key={index}
-              className={`space-y-2 mx-auto max-w-3xl ${
-                item.alignLeft ? 'text-left' : 'text-center'
-              }`}
+              className={`space-y-2 mx-auto max-w-3xl ${item.alignLeft ? 'text-left' : 'text-center'}`}
             >
               <h3
                 className={`text-3xl md:text-4xl font-semibold hover:text-red-500 transition-colors duration-300 ${
@@ -96,12 +93,12 @@ export default function About() {
               >
                 {item.title}
               </h3>
-              <p className="text-lg md:text-xl text-gray-300 hover:text-blue-300 transition-colors duration-300">
+              <p className="text-lg md:text-xl text-gray-300 hover:text-blue-300 transition-colors duration-300 break-words">
                 {item.desc}
               </p>
 
               {item.skills && (
-                <div className="flex justify-evenly gap-6 mt-4">
+                <div className="flex flex-wrap justify-evenly gap-6 mt-4">
                   {item.skills.map((skill) => (
                     <div
                       key={skill.name}

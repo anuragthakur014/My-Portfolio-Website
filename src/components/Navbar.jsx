@@ -25,6 +25,7 @@ export default function Navbar() {
     <nav className={`fixed w-full flex items-center px-6 py-4 z-50 transition-colors duration-300 ${
       navSolid ? 'bg-gray-900 text-white' : 'bg-transparent text-white'
     }`}>
+      {/* Logo/Name */}
       <div className="font-bold text-xl hover:drop-shadow-[0_0_25px_rgba(255,0,0,0.9)] hover:text-blue-200 transition duration-300">
         Anurag Thakur!
       </div>
@@ -44,8 +45,8 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* Social & mobile */}
-      <div className="flex items-center space-x-4">
+      {/* Social & mobile toggle aligned right */}
+      <div className="flex items-center ml-auto space-x-4">
         <a href="https://www.linkedin.com/in/..." target="_blank" rel="noopener noreferrer"
            className="text-[#0e76a8] hover:text-blue-400 transition duration-300">
           <FaLinkedin size={30} />
@@ -54,7 +55,7 @@ export default function Navbar() {
            className="text-[#6cc644] hover:text-green-300 transition duration-300">
           <FaGithub size={30} />
         </a>
-        <div className="md:hidden ml-2" onClick={() => setOpen(!open)}>
+        <div className="md:hidden" onClick={() => setOpen(!open)}>
           {open
             ? <FaTimes size={24} className="text-pink-500" />
             : <FaBars size={24} className="text-indigo-400" />
@@ -62,7 +63,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile nav */}
+      {/* Mobile nav (slides down) */}
       {open && (
         <ul className="absolute top-full left-0 w-full bg-gray-900 bg-opacity-90 text-white flex flex-col items-center py-4 space-y-4 md:hidden">
           {navItems.map(({ name, icon }) => (
