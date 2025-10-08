@@ -19,7 +19,7 @@ export default function Projects() {
       alt: 'Kerala Tourism Website',
       title: 'Kerala Tourism',
       desc: 'A tourism portal for exploring Kerala’s beauty.',
-      demoLink: 'https://anurag-html.vercel.app/',
+      demoLink: 'https://kerala-tourism-clone-14.netlify.app/',
       codeLink: 'https://github.com/anuragthakur014/anurag-html',
     },
     {
