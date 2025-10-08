@@ -47,11 +47,11 @@ export default function Navbar() {
 
       {/* Social & mobile toggle aligned right */}
       <div className="flex items-center ml-auto space-x-4">
-        <a href="https://www.linkedin.com/in/..." target="_blank" rel="noopener noreferrer"
+        <a href="https://www.linkedin.com/in/anurag-kumar-1351a7372" target="_blank" rel="noopener noreferrer"
            className="text-[#0e76a8] hover:text-blue-400 transition duration-300">
           <FaLinkedin size={30} />
         </a>
-        <a href="https://github.com/..." target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/anuragthakur014" target="_blank" rel="noopener noreferrer"
            className="text-[#6cc644] hover:text-green-300 transition duration-300">
           <FaGithub size={30} />
         </a>
