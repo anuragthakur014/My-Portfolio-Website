@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './images/im1.png';
 import bgImage from './images/im7.png';
-import resume from './pdf/Anurag CV.pdf';
+import resume from './pdf/My Resume.pdf';
 
 // Custom useTypewriter hook remains unchanged
 function useTypewriter(text, speed = 100, pause = 2000) {
