@@ -7,7 +7,9 @@ import cssIcon from './images/css.png';
 import jsIcon from './images/js.png';
 import javaIcon from './images/java.png';
 import mysqlIcon from './images/mysql.png';
-import reactjsIcon from './images/reactjsi.png';
+import reactjsIcon from './images/reactjs.png';
+import pythonIcon from './images/python.png';
+import githubIcon from './images/github.png';
 
 export default function About() {
   const [hover, setHover] = useState(false);
@@ -39,6 +41,8 @@ export default function About() {
         { name: 'JAVA(Basic)', img: javaIcon },
         { name: 'MYSQL', img: mysqlIcon },
         { name: 'REACTJS', img: reactjsIcon },
+        { name: 'PYTHON', img: pythonIcon },
+        { name: 'GITHUB', img: githubIcon },
       ],
     },
   ];
@@ -100,20 +104,33 @@ export default function About() {
               </p>
 
               {item.skills && (
-                <div className="flex flex-wrap justify-evenly gap-6 mt-4">
-                  {item.skills.map((skill) => (
-                    <div
-                      key={skill.name}
-                      className="flex flex-col items-center transform transition-transform duration-300 hover:scale-110"
-                    >
-                      <img
-                        src={skill.img}
-                        alt={skill.name}
-                        className="w-16 h-16 mt-5 object-contain mb-2 drop-shadow-md hover:drop-shadow-[0_0_20px_rgba(0,200,255,0.7)] transition-shadow duration-300"
-                      />
-                      <span className="text-sm font-medium">{skill.name}</span>
-                    </div>
-                  ))}
+                <div className="w-full mt-6">
+                  {/* Grid: 2 cols mobile, 3 cols md, 4 cols lg. max-w keeps the grid from stretching too wide */}
+                  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center items-center max-w-[900px] mx-auto">
+                    {item.skills.map((skill) => (
+                      <div
+                        key={skill.name}
+                        /* Hover behaviors:
+                           - The container scales on hover (zoom)
+                           - The image gets an extra drop-shadow glow on hover
+                        */
+                        className="flex flex-col items-center transform transition-transform duration-300 hover:scale-110"
+                      >
+                        <img
+                          src={skill.img}
+                          alt={skill.name}
+                          /* Responsive sizes (Tailwind standard widths): 
+                             - mobile: w-12
+                             - sm: w-16
+                             - md: w-20
+                             - lg: w-24
+                          */
+                          className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain mb-3 drop-shadow-md transition-shadow duration-300 hover:drop-shadow-[0_0_20px_rgba(0,200,255,0.7)]"
+                        />
+                        <span className="text-sm md:text-base font-medium tracking-wide">{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
