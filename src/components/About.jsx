@@ -7,6 +7,7 @@ import cssIcon from './images/css.png';
 import jsIcon from './images/js.png';
 import javaIcon from './images/java.png';
 import mysqlIcon from './images/mysql.png';
+import reactjsIcon from './images/reactjsi.png';
 
 export default function About() {
   const [hover, setHover] = useState(false);
@@ -35,8 +36,9 @@ export default function About() {
         { name: 'HTML', img: htmlIcon },
         { name: 'CSS', img: cssIcon },
         { name: 'JavaScript', img: jsIcon },
-        { name: 'JAVA', img: javaIcon },
+        { name: 'JAVA(Basic)', img: javaIcon },
         { name: 'MYSQL', img: mysqlIcon },
+        { name: 'REACTJS', img: reactjsIcon },
       ],
     },
   ];
