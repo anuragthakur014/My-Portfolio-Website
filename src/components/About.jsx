@@ -12,11 +12,18 @@ export default function About() {
     { name: 'CSS', level: 85, icon: 'cssIcon', color: 'from-blue-500 to-cyan-500' },
     { name: 'JavaScript', level: 80, icon: 'jsIcon', color: 'from-yellow-400 to-yellow-600' },
     { name: 'React', level: 85, icon: 'reactjsIcon', color: 'from-cyan-400 to-blue-500' },
-    { name: 'Java (Basic)', level: 65, icon: 'javaIcon', color: 'from-red-600 to-orange-600' },
-    { name: 'Python', level: 75, icon: 'pythonIcon', color: 'from-blue-400 to-yellow-500' },
+    { name: 'Node.js', level: 75, icon: 'nodejsIcon', color: 'from-green-500 to-green-700' },
+    { name: 'Laravel', level: 75, icon: 'laravelIcon', color: 'from-red-500 to-orange-500' },
+    { name: 'php', level: 75, icon: 'phpIcon', color: 'from-blue-700 to-blue-900' },
     { name: 'MySQL', level: 80, icon: 'mysqlIcon', color: 'from-blue-600 to-blue-800' },
+    { name: 'MongoDB', level: 75, icon: 'mongodbIcon', color: 'from-green-500 to-green-700' },
+    { name: 'Git', level: 80, icon: 'gitIcon', color: 'from-blue-400 to-blue-600' },
     { name: 'GitHub', level: 85, icon: 'githubIcon', color: 'from-green-700 to-green-900' },
     { name: 'Tailwind Css', level: 75, icon: 'tailwindIcon', color: 'from-blue-700 to-blue-900' },
+    { name: 'Java (Basic)', level: 65, icon: 'javaIcon', color: 'from-red-600 to-orange-600' },
+    { name: 'Python', level: 75, icon: 'pythonIcon', color: 'from-blue-400 to-yellow-500' },
+    { name: 'Bootstrap', level: 80, icon: 'bootstrapIcon', color: 'from-purple-500 to-pink-500' },
+    
   ];
 
   const experience = [
@@ -104,7 +111,7 @@ export default function About() {
                   <div className="text-xs text-gray-500">Projects</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-pink-400">9+</div>
+                  <div className="text-2xl font-bold text-pink-400">15+</div>
                   <div className="text-xs text-gray-500">Skills</div>
                 </div>
                 <div className="text-center">

@@ -140,7 +140,7 @@ export default function HomePage() {
                 <div className="text-sm text-gray-400">Years</div>
               </div>
               <div className="text-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-orange-500/50 transition-all">
-                <div className="text-3xl font-bold text-orange-400">9+</div>
+                <div className="text-3xl font-bold text-orange-400">15+</div>
                 <div className="text-sm text-gray-400">Skills</div>
               </div>
             </div>
@@ -296,3 +296,4 @@ export default function HomePage() {
     </div>
   );
 }
+ 
